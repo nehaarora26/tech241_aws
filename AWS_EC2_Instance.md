@@ -145,4 +145,18 @@ pm2 start app.js --name "sparta app"
 
   ![Alt text](image-17.png)
 
+15. To set automatic reverse proxy, use the following commands in App script after nginx installation commands and then restart nginx. 
+
+    ```
+    sudo sed -i 's#try_files $uri $uri/ =404;#proxy_pass http://localhost:3000;#g' /etc/nginx/sites-available/default
+
+    sudo systemctl restart nginx
+    ```
+
+16. Use     cat  /etc/nginx/sites-available/default     to check if your reverse proxy config is altered.
+
+17. To check, if reverse proxy is set, just use app_vm_ip in the browser and the sparta app or your web page should load without adding the port number.
+
+
+
 
