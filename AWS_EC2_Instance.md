@@ -28,20 +28,19 @@ How to launch an EC2 instance?
 
 4. You can make a new security group and open differnt ports based on your requirement or you can choose a security group already existing from your previous work.
 
-![Alt text](image-7.png)
-
 
 ![Alt text](image-19.png)
-
-
-![Alt text](image-8.png)
 
 
 5. Select launch instance.
 
 ![Alt text](image-20.png)
 
+![Alt text](image-7.png)
+
 6. Make sure that the instance state shows 2/2 checks passed. Click on connect then.
+
+![Alt text](image-8.png)
 
 
 ![Alt text](image-9.png)
@@ -158,5 +157,13 @@ pm2 start app.js --name "sparta app"
 17. To check, if reverse proxy is set, just use app_vm_ip in the browser and the sparta app or your web page should load without adding the port number.
 
 
+
+18. To stop or terminate any instance, select the instance you want to stop and then click on instance state. From dropdown list, choose the relevant option.
+
+
+![Alt text](image-22.png)
+
+
+![Alt text](image-23.png)
 
 
