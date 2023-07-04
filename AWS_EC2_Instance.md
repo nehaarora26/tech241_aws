@@ -73,7 +73,8 @@ How to launch an EC2 instance?
 
 12. Connect to the App_VM using the same steps. But, run the app script.
     
-```       #!/bin/bash
+```       
+#!/bin/bash
 
 # update source list
 sudo apt update -y
@@ -88,16 +89,22 @@ sudo apt install nginx -y
 sudo systemctl enable nginx
 
 # start nginx
-sudo systemctl start nginx
+# sudo systemctl start nginx
 
 # status nginx
 # sudo systemctl status nginx
+
+# installing sed
+sudo apt install sed -y
+
+#setup nginx as a proxy server
+sudo sed -i 's#try_files $uri $uri/ =404;#proxy_pass http://localhost:3000;#g' /etc/nginx/sites-available/default
 
 # restart nginx
 sudo systemctl restart nginx
 
 # enable nginx - auto runs on startup
-sudo systemctl enable nginx
+# sudo systemctl enable nginx
 
 # download node js
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
@@ -125,6 +132,7 @@ npm install -y
 
 # start app
 pm2 start app.js --name "sparta app"
+
 #nohup ./app2 &
 #nohup node app.js &
 #nohup command &
@@ -134,7 +142,7 @@ pm2 start app.js --name "sparta app"
 ```
     
 
-13. In the env variable, change MongoDb ip to your DB_VM_public Ip
+13. In the env variable, change MongoDb ip to your DB_VM_public Ip everytime you run this script because in AWS, IP address is dynamic(changes everytime you restart the instance).
 
 
   ![Alt text](image-16.png)
@@ -161,9 +169,10 @@ pm2 start app.js --name "sparta app"
 18. To stop or terminate any instance, select the instance you want to stop and then click on instance state. From dropdown list, choose the relevant option.
 
 
-![Alt text](image-22.png)
+    ![Alt text](image-22.png)
 
 
-![Alt text](image-23.png)
+    
+    ![Alt text](image-23.png)
 
 

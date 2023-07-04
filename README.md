@@ -7,6 +7,15 @@
 
 ### DevOps seeks to overcome these challenges by fostering a culture of collaboration, automation, and continuous improvement.
 
+
+### In the past, Developers were working on computers where the environments and dependencies were different from the operations team.  As a result, a lot of times, their codes wouldn't run on Operations end of the process because of incompatibility between different environments. 
+
+
+### Having devops come into play has made sure that the developers and operations teams have all the same environments, dependencies(like versions), settings and configurations(like BindIps). This helps take care of bugs and failures at a later stage. 
+
+
+
+
 ### Key characteristics and principles of DevOps include:
 
 1. Collaboration: DevOps encourages close collaboration and shared responsibilities between development and operations teams. By working together, both teams gain a better understanding of each other's needs and constraints, leading to more effective decision-making.
@@ -29,13 +38,31 @@
 
 
 
-![Alt text](Devops_tools-1.jpeg)
-
-
 ![Alt text](DevOps-lifecycle-capabilities-1024x621-1.png)
 
 
 ![Alt text](Devops-1.jpg)
+
+
+![Alt text](Devops_tools-1.jpeg)
+
+
+## What is value of DevOps for businesses?
+
+### The value of DevOps for businesses is significant and encompasses several key benefits:
+
+1. Increased speed and agility: DevOps enables organizations to deliver software updates and new features at a faster pace. By automating processes and  integrating teams businesses can respond quickly to market demands, customer feedback, and new and fast emerging opportunities.
+
+2. Improved quality and reliability: DevOps promotes continuous integration, testing, and deployment. It also involves frequent feedback loops, helps identify and resolve issues early in the development cycle, minimizing the chances of critical failures in production.
+
+3. Efficient resource utilization: By adopting DevOps practices, businesses can optimize the use of resources, both human and infrastructure. It also helps to reduce manual overhead, resulting in cost savings and improved efficiency.
+
+
+
+
+
+
+
 
 
 
